@@ -48,6 +48,7 @@ public class QueenColumns {
 			if (oneController[columns]) {
 				if (!possible) {
 					possible = true;
+					// per evitare cicli mi salvo la prima colonna true e l'ultima
 					firstPossibleColumn = columns;
 				}
 				lastPossibleColumn = columns;
@@ -104,7 +105,7 @@ public class QueenColumns {
 			indexController++;
 		}
 		// a causa della richiesta di restituire un array con il numero preciso delle
-		// colonne e le colonne
+		// colonne è necessario effettuare quest ultimo ciclo
 		int[] solution = new int[counter];
 		for (int indexSolution = 0; indexSolution < counter; indexSolution++) {
 			if (oneController[--indexController]) {

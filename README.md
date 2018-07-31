@@ -14,7 +14,7 @@ Se ci sono useremo un array booleano di lunghezza pari al numero di colonne dell
 Prendendo quindi solo le colonne con valore vero dobbiamo eseguire 2 cicli per analizzare la diagonale sinistra e la diagonale destra dell'elemento considerato.
 Con annessi controlli interni la soluzione è questa:
 ```
-private static int[] queenColumns(int[][] b, int r) {
+	private static int[] queenColumns(int[][] b, int r) {
 		boolean[] oneController = new boolean[b.length];
 		boolean possible = false;
 		int firstPossibleColumn = 0;
@@ -30,6 +30,7 @@ private static int[] queenColumns(int[][] b, int r) {
 			if (oneController[columns]) {
 				if (!possible) {
 					possible = true;
+					// per evitare cicli mi salvo la prima colonna true e l'ultima
 					firstPossibleColumn = columns;
 				}
 				lastPossibleColumn = columns;
@@ -86,7 +87,7 @@ private static int[] queenColumns(int[][] b, int r) {
 			indexController++;
 		}
 		// a causa della richiesta di restituire un array con il numero preciso delle
-		// colonne e le colonne
+		// colonne è necessario effettuare quest ultimo ciclo
 		int[] solution = new int[counter];
 		for (int indexSolution = 0; indexSolution < counter; indexSolution++) {
 			if (oneController[--indexController]) {
