@@ -97,3 +97,4 @@ private static int[] queenColumns(int[][] b, int r) {
 	}
 
 ```
+***La soluzione che ho proposto potrebbe non essere la migliore o la più efficace***
