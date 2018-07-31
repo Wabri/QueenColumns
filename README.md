@@ -2,10 +2,10 @@
 **Questa repository si autodistruggerà tra meno di 24h**
 
 ## Testo dell'esercizio
-![esercizio][resources/exercise.jpg]
+![esercizio](resources/exercise.jpg)
 
 ## Soluzione degli esempi
-![soluzione][resources/soluzione.jpg]
+![soluzione](resources/soluzione.jpg)
 
 ## Elaborazione della soluzione
 L'esercizio chiede la creazione di un metodo di risoluzione di questo problema prendendo in input la matrice e la riga da esaminare.
