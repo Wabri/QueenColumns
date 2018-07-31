@@ -98,3 +98,6 @@ private static int[] queenColumns(int[][] b, int r) {
 
 ```
 ***La soluzione che ho proposto potrebbe non essere la migliore o la più efficace***
+
+Posso provare il metodo che ho creato con l'output della console:
+![console](resources/console.png)
